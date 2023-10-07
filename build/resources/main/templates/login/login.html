@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>로그인 페이지</title>
+</head>
+<body>
+<h1>로그인 페이지</h1>
+<form action="/member/login/login" method="post">
+  <div>
+    <label for="username">아이디</label>
+    <input type="text" name="username" id="username">
+  </div>
+  <div>
+    <label for="password">비밀번호</label>
+    <input type="password" name="password" id="password">
+  </div>
+  <div>
+    <input type="checkbox" name="remember-me" id="rememberMe">
+    <label for="rememberMe">자동 로그인</label>
+  </div>
+  <p style="display: none" class="error_txt" id="error_text"
+     th:if="${#strings.length(session.loginErrorMessage)>0}"
+     th:text="${session.loginErrorMessage}">로그인하시려면 아이디와 비밀번호를 입력해주세요</p>
+  <button type="submit">로그인</button>
+</form>
+</body>
+<script>
+  const error = document.getElementById('error_text');
+  if(error !== undefined) alert(error.innerText);
+</script>
+</html>
