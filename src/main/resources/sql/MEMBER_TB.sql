@@ -17,8 +17,8 @@ CREATE TABLE MEMBER_TB
 
 -- 비밀번호 1111
 INSERT INTO MEMBER_TB (MEMBER_LOGIN_ID, MEMBER_NAME, MEMBER_PASSWORD, MEMBER_EMAIL)
-VALUES ('member1', '전남혁', '$2a$12$umem9giXuB0lDzAQ1ofzmeVqwHHFX76sbMObVEWpcIOPc6O.47NGa', 'all_step@naver.com');
+VALUES ('member1', '박동우', '$2a$12$umem9giXuB0lDzAQ1ofzmeVqwHHFX76sbMObVEWpcIOPc6O.47NGa', 'pardongwoo@naver.com');
 
 -- 비밀번호 1234
 INSERT INTO MEMBER_TB (MEMBER_LOGIN_ID, MEMBER_NAME, MEMBER_PASSWORD, MEMBER_EMAIL)
-VALUES ('member2', '김철수', '$2a$12$R0ZgpAnBKh8CX0sATNRY8OyXPfke6GsXOxOA18gWyJ7RrnzOGnDOu', '');
+VALUES ('member2', '유저2', '$2a$12$R0ZgpAnBKh8CX0sATNRY8OyXPfke6GsXOxOA18gWyJ7RrnzOGnDOu', 'aa@test.com');
